@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const getTrending = (page = 1) => {
-  return axios.get('http://api.review.network/entities/trending', {
+  return axios.get('https://api.review.network/entities/trending', {
     params: {
       page
     }
@@ -12,7 +12,7 @@ export const getTrending = (page = 1) => {
 } 
 
 export const getRestaurants = (page = 1) => {
-  return axios.get('http://api.review.network/restaurants', {
+  return axios.get('https://api.review.network/restaurants', {
     params: {
       page
     }
@@ -23,7 +23,7 @@ export const getRestaurants = (page = 1) => {
 } 
 
 export const getHotels = (page = 1) => {
-  return axios.get('http://api.review.network/hotels', {
+  return axios.get('https://api.review.network/hotels', {
     params: {
       page
     }
