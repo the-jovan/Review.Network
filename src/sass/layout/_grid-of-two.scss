@@ -1,0 +1,35 @@
+@import './../abstracts/mixins';
+@import './../abstracts/variables';
+
+.searchResults {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 1.5rem;
+  flex: 1;
+  max-width: 1366px;
+  margin: 1.5rem 0;
+
+  @include phone-only {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+  }
+
+  &__term {
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    background-color: white;
+    border-bottom: 3px solid purple;
+    width: 20rem;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-transform: capitalize;
+    color: grey;
+  }
+}

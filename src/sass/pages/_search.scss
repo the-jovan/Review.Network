@@ -1,0 +1,22 @@
+@import './../abstracts/mixins';
+
+.search {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
+    max-width: 1080px;
+    padding: 1.5rem 0;
+
+    @include phone-only {
+      grid-template-columns: 1fr;
+    }
+  }
+}

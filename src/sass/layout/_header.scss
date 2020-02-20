@@ -1,0 +1,50 @@
+@import './../abstracts/variables';
+@import './../abstracts/mixins';
+
+.header {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, $color-purple-dark 15%, $color-blue-dark 85%);
+
+  &__wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 1366px;
+
+    @include phone-only {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    width: 16rem;
+
+    @include phone-only {
+      padding: 1rem;
+      width: 20rem;
+    }
+  }
+
+  &__navigation {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    @include phone-only {
+      display: none;
+    }
+
+    &__link {
+      padding: 1.6rem;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: $color-white-light;
+      text-decoration: none;
+      
+      &:hover {
+        background-color: $color-grey-transparent;
+      }
+    }
+  }
+}

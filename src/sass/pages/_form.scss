@@ -1,0 +1,87 @@
+@import './../abstracts/variables';
+@import './../abstracts/mixins';
+
+.user {
+  text-align: center;
+
+  &__header {
+    background-color: $color-white-light;
+    padding: .6rem;
+
+    & > img {
+      width: 10rem;
+      margin: .4rem;
+    }
+    & > p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  }
+
+  &__form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__input {
+      width: 54rem;
+      background-color: transparent;
+      border: none;
+      color: $color-grey-light;
+      border-bottom: 1px solid $color-grey-light;
+      font-size: 1.8rem;
+      padding: .5em;
+      margin-bottom: 1.6rem;
+
+      @include phone-only {
+        width: 30rem;
+      }
+    }
+
+    &__submit {
+      background: linear-gradient(90deg, $color-purple-dark 15%, $color-blue-dark 85%);
+      color: $color-white-light;
+      font-size: 1.4rem;
+      padding: .6rem 15rem;
+      font-weight: 400;
+      width: 54rem;
+      border: none;
+      cursor: pointer;
+
+      @include phone-only {
+        width: 28rem;
+      }
+    }
+  }
+
+  &__links {
+    width: 54rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+
+    @include phone-only {
+      width: 30rem;
+    }
+
+    &__link {
+      font-size: 1rem;
+      background-color: $color-white-light;
+      flex: 1;
+      padding: 1rem;
+      text-decoration: none;
+      color: $color-grey-dark;
+      font-weight: 600;
+      box-shadow: 1px 1px 4px 1px $color-grey-light;
+
+      &:first-of-type {
+        margin-right: .5rem;
+      }
+
+      &:last-of-type {
+        margin-left: .5rem
+      }
+    }
+  }
+}

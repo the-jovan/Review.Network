@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="16px" viewBox="0 0 66 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>honeycomb/large/4.0</title>
+    <desc>Created with Sketch.</desc>
+    <g id="honeycomb/large/4.0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M52.5,12.2857143 L46,16 L39.5,12.2857143 L33,16 L26.5,12.2857143 L20,16 L13.5,12.2857143 L7,16 L0,12 L0,4 L7,0 L13.5,3.71428571 L20,0 L26.5,3.71428571 L33,0 L39.5,3.71428571 L46,0 L52.5,3.71428571 L59,0 L66,4 L66,12 L59,16 L52.5,12.2857143 Z M39,4.5 L33,1 L27,4.5 L27,11.5 L33,15 L39,11.5 L39,4.5 Z M26,4.5 L20,1 L14,4.5 L14,11.5 L20,15 L26,11.5 L26,4.5 Z M13,4.5 L7,1 L1,4.5 L1,11.5 L7,15 L13,11.5 L13,4.5 Z M46,1 L40,4.5 L40,11.5 L46,15 L52,11.5 L52,4.5 L46,1 Z M59,1 L53,4.5 L53,11.5 L59,15 L65,11.5 L65,4.5 L59,1 Z" id="Polygon-2" fill="#3E4356"></path>
+        <polygon id="Path" fill="#3E4356" fill-rule="nonzero" points="7 2 12 5 12 11 7 14 2 11 2 5"></polygon>
+        <polygon id="Path" fill="#3E4356" fill-rule="nonzero" points="20 2 25 5 25 11 20 14 15 11 15 5"></polygon>
+        <polygon id="Path" fill="#3E4356" fill-rule="nonzero" points="33 2 38 5 38 11 33 14 28 11 28 5"></polygon>
+        <polygon id="Path" fill="#3E4356" fill-rule="nonzero" points="46 2 51 5 51 11 46 14 41 11 41 5"></polygon>
+    </g>
+</svg>

@@ -1,0 +1,67 @@
+@import './../../abstracts/mixins';
+@import './../../abstracts/variables';
+
+.card-hor {
+  display: flex;
+  align-items: center;
+  background-color: $color-white-light;
+  text-decoration: none;
+  padding: 1rem;
+
+  @include phone-only {
+    margin: 0 1rem;
+  }
+
+  &__img {
+    width: 40%;
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__info {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+
+    &__reviews {
+      display: flex;
+      align-items: center;
+      padding-top: .75rem;
+      font-size: 1.4rem;
+      color: $color-grey-medium;
+
+      &__svg > img {
+        height: 1.4rem;
+      }
+
+      &__number {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  &__type {
+    font-size: .8rem;
+    color: $color-grey-medium;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: $color-grey-black;
+    width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__address {
+    font-size: .9rem;
+    width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $color-grey-medium;
+  }
+}

@@ -1,0 +1,98 @@
+@import './../abstracts/variables';
+@import './../abstracts/mixins';
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, $color-purple-dark 15%, $color-blue-dark 85%);
+
+  &__wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1366px;
+
+    @include phone-only {
+      justify-content: center;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+
+    &__link {
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      color: $color-white-light;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      text-transform: uppercase;
+  
+      &:hover {
+        border-bottom: 2px solid $color-white-light;
+      }
+    }
+
+    &__search { 
+      padding-left: 3rem;
+
+      @include phone-only {
+        display: none;
+      }
+
+      & > input {
+        background-color: transparent;
+        color: $color-white-light;
+        font-size: 1.2rem;
+        border: none;
+        background-image: url('https://clip.cookdiary.net/sites/default/files/wallpaper/search-icon/153752/search-icon-transparent-white-153752-6138160.jpg');
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        padding-left: 2rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          color: $color-white-medium;
+        }
+      }
+    }
+  }
+
+  &__child {
+    margin-bottom: 2rem;
+  }
+
+  &__mobile__form {
+    display: none;
+
+    @include phone-only {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(90deg, $color-purple-dark 15%, $color-blue-dark 85%);
+
+      & > input {
+        background-color: transparent;
+        color: $color-white-light;
+        font-size: 1.2rem;
+        border: none;
+        background-image: url('https://clip.cookdiary.net/sites/default/files/wallpaper/search-icon/153752/search-icon-transparent-white-153752-6138160.jpg');
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        padding-left: 2rem;
+
+        &:focus {
+          outline: none;
+        }
+  
+        &::placeholder {
+          color: $color-white-light;
+        }
+      }      
+    }
+  }
+}
