@@ -15,7 +15,7 @@ const Reviews = ({ children }) => {
           event.preventDefault()
           const id = event.target.elements[0].value
           setSearchedData(id)
-          navigate(`${window.location.pathname}/search-results/${id}`)
+          navigate(`${window.location.pathname.split('/').slice(0, 3).join('/')}/search-results/${id}`)
         }}>
         <input type='text' placeholder='Search'/>
       </form>
