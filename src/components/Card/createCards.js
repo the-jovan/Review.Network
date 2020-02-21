@@ -41,7 +41,6 @@ export const createCards = data => {
 }
 
 export const createTrendingHorizontalCards = data => {
-  console.log(data)
   if (!data) {
     return <Loader type="TailSpin" style={{color: "blue", height: "80px", width: "80px", textAlign: "center"}} /> 
   } else {
