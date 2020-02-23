@@ -16,13 +16,13 @@ const ProductReviews = ({id}) => {
       case 5:
         return <p>EXCELLENT</p>
       case 4:
-        return <p>'ABOVE AVERAGE'</p>
+        return <p>ABOVE AVERAGE</p>
       case 3:
-        return <p>'AVERAGE'</p>
+        return <p>AVERAGE</p>
       case 2:
-        return <p>'BELOW AVERAGE'</p>
+        return <p>BELOW AVERAGE</p>
       case 1:
-        return <p>'TERRIBLE'</p>
+        return <p>TERRIBLE</p>
       default:
         return null
     }
@@ -51,7 +51,7 @@ const ProductReviews = ({id}) => {
             <div className='productReviews__review__author__img' style={{backgroundImage: "url(" + e.author.profile_photo + ")"}}></div>
             <div className='productReviews__review__author__info'>
               <p className='productReviews__review__author__info__username'>{e.author.username}</p>
-              <p className='productReviews__review__author__info__date'>{e.created_at.date}</p>
+              <p className='productReviews__review__author__info__date'>{e.created_at.date.split(' ')[0]}</p>
             </div>
             <div className='productReviews__review__author__score'>
               {setScore(e.score)}
@@ -59,7 +59,7 @@ const ProductReviews = ({id}) => {
             </div>
           </div>
 
-          <div className='productReviews__review__image' style={{backgroundImage: "url(" + e.author.profile_photo + ")"}}>BIG IMAGE</div>
+          <div className='productReviews__review__image' style={{backgroundImage: "url(" + e.author.profile_photo + ")"}}></div>
 
           <p className='productReviews__review__body'>{e.body}</p>
 
