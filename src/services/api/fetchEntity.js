@@ -15,14 +15,14 @@ export const getSingleHotel = (name) => {
 }
 
 export const getReviews = (id) => {
-  return axios.get(`httpss://api.review.network/entities/${id}/reviews?page=1`)
+  return axios.get(`https://api.review.network/entities/${id}/reviews?page=1`)
   .then(response => {
     return response.data
   })
 }
 
 export const getCity = (name) => {
-  return axios.get(`httpss://api.review.network/cities/search/${name}`)
+  return axios.get(`https://api.review.network/cities/search/${name}`)
   .then(response => {
     return response.data
   })
