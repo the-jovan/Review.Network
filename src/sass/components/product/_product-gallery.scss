@@ -59,11 +59,12 @@
 
     &__image {
       flex: 6;
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
       background-position: center;
 
       @include phone-only {
-        height: 30%;
+        height: 70%;
       }
     }
 
